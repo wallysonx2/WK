@@ -5,7 +5,7 @@ Para lembrar dos nossos momentos especiais
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surpresa para Kamilly</title>
+    <title>Teu jeito singular</title>
     <style>
         body {
             font-family: Arial, sans-serif;
