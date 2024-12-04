@@ -1,5 +1,5 @@
 # Pequerrucha
-Um site simples para uma surpresa especial
+Para lembrar dos nossos momentos especiais
 
 <!DOCTYPE html>
 <html lang="pt-BR">
