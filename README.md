@@ -1,6 +1,4 @@
-# Pequerrucha
-Para lembrar dos nossos momentos especiais
-
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -28,8 +26,17 @@ Para lembrar dos nossos momentos especiais
             margin-top: 20px;
         }
     </style>
+    <script>
+        function pedirSenha() {
+            var senha = prompt("Digite a senha para acessar o site:");
+            if (senha !== "1808") { // Defina a senha aqui
+                alert("Senha incorreta! Acesso negado.");
+                document.body.innerHTML = ""; // Limpa o conteúdo da página
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="pedirSenha()">
     <h1>É tão particular o meu encontro quando é com você</h1>
     <p>Essa foto é só pra lembrar o quanto amo você! Você é minha luz, meu sorriso e meu tudo. 💕</p>
     <img src="WK.jpg" alt="Uma foto nossa">
