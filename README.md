@@ -20,8 +20,11 @@
             color: #333;
             margin-bottom: 20px;
         }
-        video {
-            max-width: 100%;
+        iframe {
+            width: 100%;
+            max-width: 720px;
+            height: 405px;
+            border: none;
             border-radius: 15px;
             margin-bottom: 20px;
         }
@@ -75,18 +78,15 @@
 <body>
     <h1>O início da sua jornada 💌</h1>
     <p>Pequerrucha, hoje começa uma aventura especial: sua jornada até uma surpresa de aniversário única, feita com todo meu amor. ❤️</p>
-    <p>Antes de continuar, clica no vídeo aqui embaixo pra assistir minha mensagem especial pra você. 😉</p>
-    <video controls>
-        <source src="https://drive.google.com/uc?export=download&id=1Jo9x_7R-lP6sJUEUKYNl-boxeeid0JBe" type="video/mp4">
-        Seu navegador não suporta vídeos.
-    </video>
+    <p>Antes de continuar, assista ao vídeo especial aqui embaixo. 😉</p>
+    <iframe src="https://drive.google.com/uc?export=view&id=1Jo9x_7R-lP6sJUEUKYNl-boxeeid0JBe" allowfullscreen></iframe>
     <div class="senha-container">
         <p>Insira a senha para revelar a próxima pista:</p>
-        <input type="text" id="senha" placeholder="Digite a senha aqui">
-        <button onclick="verificarSenha()">Enviar</button>
+        <input type="text" id="senha" placeholder="Digite a senha">
+        <button onclick="verificarSenha()">Verificar</button>
     </div>
     <div id="proximaPista" class="proxima-pista">
-        <p>Parabéns! 🎉 Sua próxima pista está na **[localização da próxima pista]**. Não esqueça de usar a senha para desbloquear a próxima etapa!</p>
+        <p>Parabéns, você desbloqueou a próxima pista! Siga até a *[descreva o local da próxima pista]*.</p>
     </div>
 </body>
 </html>
