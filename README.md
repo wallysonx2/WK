@@ -77,16 +77,16 @@
     <p>Pequerrucha, hoje começa uma aventura especial: sua jornada até uma surpresa de aniversário única, feita com todo meu amor. ❤️</p>
     <p>Antes de continuar, clica no vídeo aqui embaixo pra assistir minha mensagem especial pra você. 😉</p>
     <video controls>
-        <source src="[https://drive.google.com/file/d/1Jo9x_7R-lP6sJUEUKYNl-boxeeid0JBe/view?usp=drive_link](https://drive.google.com/file/d/1Jo9x_7R-lP6sJUEUKYNl-boxeeid0JBe/view?usp=sharing)" type="video/mp4">
+        <source src="https://drive.google.com/uc?export=download&id=1Jo9x_7R-lP6sJUEUKYNl-boxeeid0JBe" type="video/mp4">
         Seu navegador não suporta vídeos.
     </video>
     <div class="senha-container">
         <p>Insira a senha para revelar a próxima pista:</p>
         <input type="text" id="senha" placeholder="Digite a senha aqui">
-        <button onclick="verificarSenha()">Verificar</button>
+        <button onclick="verificarSenha()">Enviar</button>
     </div>
     <div id="proximaPista" class="proxima-pista">
-        <p>Parabéns! Você desbloqueou a próxima pista. Vá até o banco onde nos sentamos no nosso primeiro encontro e procure pelo próximo QR Code. Boa sorte! 💕</p>
+        <p>Parabéns! 🎉 Sua próxima pista está na **[localização da próxima pista]**. Não esqueça de usar a senha para desbloquear a próxima etapa!</p>
     </div>
 </body>
 </html>
