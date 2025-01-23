@@ -65,10 +65,8 @@
         function verificarSenha() {
             const senhaCorreta = "1808";
             const senhaDigitada = document.getElementById("senha").value;
-            const mensagem = document.getElementById("proximaPista");
-
             if (senhaDigitada === senhaCorreta) {
-                mensagem.style.display = "block";
+                document.querySelector('.proxima-pista').style.display = 'block';
             } else {
                 alert("Senha incorreta! Tente novamente.");
             }
@@ -76,17 +74,19 @@
     </script>
 </head>
 <body>
-    <h1>O início da sua jornada 💌</h1>
-    <p>Pequerrucha, hoje começa uma aventura especial: sua jornada até uma surpresa de aniversário única, feita com todo meu amor. ❤️</p>
-    <p>Antes de continuar, assista ao vídeo especial aqui embaixo. 😉</p>
-    <iframe src="https://drive.google.com/uc?export=view&id=1Jo9x_7R-lP6sJUEUKYNl-boxeeid0JBe" allowfullscreen></iframe>
+    <h1>O início da jornada</h1>
+    <p>Bem-vinda ao início da sua grande surpresa! Clique no vídeo abaixo para assistir à mensagem especial.</p>
+    <iframe src="https://www.youtube.com/embed/mF64Njl0zYg" allowfullscreen></iframe>
+
     <div class="senha-container">
-        <p>Insira a senha para revelar a próxima pista:</p>
-        <input type="text" id="senha" placeholder="Digite a senha">
+        <p>Digite a senha para desbloquear a próxima pista:</p>
+        <input type="text" id="senha" placeholder="Digite a senha aqui">
         <button onclick="verificarSenha()">Verificar</button>
     </div>
-    <div id="proximaPista" class="proxima-pista">
-        <p>Parabéns, você desbloqueou a próxima pista! Siga até a *[descreva o local da próxima pista]*.</p>
+
+    <div class="proxima-pista">
+        <h2>Próxima pista</h2>
+        <p>Agora vá até a **[DESCREVA A LOCALIZAÇÃO DA PRÓXIMA PISTA AQUI]** para continuar sua jornada!</p>
     </div>
 </body>
 </html>
