@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teu jeito singular</title>
+    <title>O início da jornada</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,30 +18,75 @@
         p {
             font-size: 18px;
             color: #333;
+            margin-bottom: 20px;
         }
-        img {
+        video {
             max-width: 100%;
-            height: auto;
             border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .proxima-pista {
+            display: none;
             margin-top: 20px;
+            padding: 15px;
+            background-color: #e0ffe0;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+        .senha-container {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
         }
     </style>
     <script>
-        function pedirSenha() {
-            var senha = prompt("Digite a senha para acessar o site:");
-            if (senha !== "1808") { // Defina a senha aqui
-                alert("Senha incorreta! Acesso negado.");
-                document.body.innerHTML = ""; // Limpa o conteúdo da página
+        function verificarSenha() {
+            const senhaCorreta = "1808";
+            const senhaDigitada = document.getElementById("senha").value;
+            const mensagem = document.getElementById("proximaPista");
+
+            if (senhaDigitada === senhaCorreta) {
+                mensagem.style.display = "block";
+            } else {
+                alert("Senha incorreta! Tente novamente.");
             }
         }
     </script>
 </head>
-<body onload="pedirSenha()">
-    <h1>É tão particular o meu encontro quando é com você https://drive.google.com/file/d/1Jo9x_7R-lP6sJUEUKYNl-boxeeid0JBe/view?usp=drivesdk</h1>
-    <p>Essa foto é só pra lembrar o quanto amo você! Você é minha luz, meu sorriso e meu tudo. 💕</p>
-    <img src="WK.jpg" alt="Uma foto nossa">
+<body>
+    <h1>O início da sua jornada 💌</h1>
+    <p>Pequerrucha, hoje começa uma aventura especial: sua jornada até uma surpresa de aniversário única, feita com todo meu amor. ❤️</p>
+    <p>Antes de continuar, clica no vídeo aqui embaixo pra assistir minha mensagem especial pra você. 😉</p>
     <video controls>
-      <source src="https://drive.google.com/file/d/1Jo9x_7R-lP6sJUEUKYNl-boxeeid0JBe/view?usp=drivesdk" type="video/mp4">
-        
+        <source src="video1.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+    <div class="senha-container">
+        <p>Insira a senha para revelar a próxima pista:</p>
+        <input type="text" id="senha" placeholder="Digite a senha aqui">
+        <button onclick="verificarSenha()">Verificar</button>
+    </div>
+    <div id="proximaPista" class="proxima-pista">
+        <p>Parabéns! Você desbloqueou a próxima pista. Vá até o banco onde nos sentamos no nosso primeiro encontro e procure pelo próximo QR Code. Boa sorte! 💕</p>
+    </div>
 </body>
 </html>
