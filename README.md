@@ -77,7 +77,7 @@
     <p>Pequerrucha, hoje começa uma aventura especial: sua jornada até uma surpresa de aniversário única, feita com todo meu amor. ❤️</p>
     <p>Antes de continuar, clica no vídeo aqui embaixo pra assistir minha mensagem especial pra você. 😉</p>
     <video controls>
-        <source src="https://drive.google.com/file/d/1Jo9x_7R-lP6sJUEUKYNl-boxeeid0JBe/view?usp=drive_link" type="video/mp4">
+        <source src="[https://drive.google.com/file/d/1Jo9x_7R-lP6sJUEUKYNl-boxeeid0JBe/view?usp=drive_link](https://drive.google.com/file/d/1Jo9x_7R-lP6sJUEUKYNl-boxeeid0JBe/view?usp=sharing)" type="video/mp4">
         Seu navegador não suporta vídeos.
     </video>
     <div class="senha-container">
